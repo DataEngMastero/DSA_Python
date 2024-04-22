@@ -16,7 +16,7 @@ def cnt_subsets(arr, sum, n):
                 td[row][col] = td[row - 1][col]
     return td[n][sum]
 
-def target_sum(arr, diff, sum, n):
+def cnt_subset_with_given_dff(arr, diff, sum, n):
     subset_sum = (diff + sum) // 2
     return cnt_subsets(arr, subset_sum, n)
 
@@ -30,4 +30,4 @@ td = []
 for i in range(n + 1):
     td.append([-1] * (sum + 1))
 
-print(target_sum(arr, diff, sum, n))
+print(cnt_subset_with_given_dff(arr, diff, sum, n))

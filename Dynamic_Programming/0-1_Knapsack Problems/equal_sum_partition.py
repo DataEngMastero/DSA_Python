@@ -25,8 +25,8 @@ def equal_partition_sum(arr, sum, n):
             return td[n][sum] 
         
         
-        print("Top-Down Approach Solution :")
-        return subset_top_down(arr, sum, n)
+        print("Top-Down Approach Solution :", sum // 2)
+        return subset_top_down(arr, sum // 2, n)
 
 arr = [1, 5, 11, 5]
 n = len(arr)
